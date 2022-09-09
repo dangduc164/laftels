@@ -2227,6 +2227,14 @@ input, textarea {
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-index__seminar__image img {
+    height: 214px;
+  }
 }
 .p-index__seminar__info {
   margin-top: 18px;
@@ -2352,6 +2360,9 @@ input, textarea {
       -ms-flex: 48.6666%;
           flex: 48.6666%;
   max-width: 48.6666%;
+}
+.p-index__column .l-row .p-index__column__col:nth-child(1) .p-index__column__box .p-index__column__image img {
+  height: 350px;
 }
 .p-index__column .l-row .p-index__column__col:nth-child(1) .p-index__column__box .p-index__column__info {
   -webkit-box-flex: 51.3334%;
@@ -2528,12 +2539,13 @@ input, textarea {
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 599px) {
   .p-index__column__image img {
     height: 213px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 .p-index__column__info {
@@ -2963,6 +2975,14 @@ input, textarea {
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-about__member__col a img {
+    height: 380px;
+  }
 }
 .p-about__member__info {
   position: absolute;
@@ -3253,6 +3273,9 @@ input, textarea {
 .p-case__item__img img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 233px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-case__item__info {
   padding: 30px 21px 25px;
@@ -3630,6 +3653,9 @@ input, textarea {
 .p-case-details__customer-voice__img img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-case-details__customer-voice__info {
   padding: 22px 16px 33px;
@@ -4525,13 +4551,9 @@ input, textarea {
 .p-news-details__box__image img {
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
-}
-@media (max-width: 599px) {
-  .p-news-details__box__image img {
-    min-height: 233px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+  height: 233px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-news-details__box__image:hover img {
   -webkit-transform: scale(1.1);
@@ -5678,6 +5700,14 @@ input, textarea {
 .p-service-system__lhr__box__image a img {
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-service-system__lhr__box__image a img {
+    height: 155px;
+  }
 }
 .p-service-system__lhr__box__image a:hover img {
   -webkit-transform: scale(1.1);
@@ -6294,9 +6324,7 @@ input, textarea {
 }
 @media (max-width: 599px) {
   .p-service__method__rough {
-    padding: 39px 42px 50px;
-    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
-            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.06);
+    padding: 39px 42px 48px;
   }
 }
 .p-service__method__rough::before {
@@ -6386,6 +6414,12 @@ input, textarea {
     font-size: 14px;
     line-height: 22px;
   }
+}
+.p-service__method__box-shadow {
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.26);
+  height: 2px;
+  background: #fff;
 }
 .p-service__method__service h4 {
   font-size: 17px;
@@ -6677,6 +6711,9 @@ input, textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.p-service__method__sales__content__box__img {
+  margin-top: auto;
+}
 @media (max-width: 599px) {
   .p-service__method__sales__content__box:nth-child(2) {
     margin-top: 35px;
@@ -6889,6 +6926,14 @@ input, textarea {
 .p-service__case__box__image img {
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-service__case__box__image img {
+    height: 289px;
+  }
 }
 .p-service__case__box__image img:hover {
   -webkit-transform: scale(1.1);
@@ -7376,6 +7421,14 @@ input, textarea {
 .p-about-details__member__img img {
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-about-details__member__img img {
+    height: 296px;
+  }
 }
 .p-about-details__member__img:hover img {
   -webkit-transform: scale(1.1);
@@ -8434,6 +8487,13 @@ input, textarea {
   }
 }
 .p-about-pc__office__slider .slick-arrow {
+  padding: 1px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: -39px;
   background-color: transparent;
@@ -8478,6 +8538,14 @@ input, textarea {
   width: 100%;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 599px) {
+  .p-about-pc__office__item a img {
+    height: 224.48px;
+  }
 }
 .p-about-pc__client {
   margin-top: 123px;
@@ -9167,6 +9235,12 @@ input, textarea {
   color: #1F1F1F;
   margin-bottom: 16px;
 }
+@media (max-width: 959px) {
+  .p-contact__form__content [type=radio]:checked + label,
+.p-contact__form__content [type=radio]:not(:checked) + label {
+    cursor: none;
+  }
+}
 .p-contact__form__content [type=radio]:checked + label:before,
 .p-contact__form__content [type=radio]:not(:checked) + label:before {
   content: "";
@@ -9264,6 +9338,11 @@ input, textarea {
 .p-contact__form__content input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
+@media (max-width: 599px) {
+  .p-contact__form__content input[type=date] {
+    padding: 15px 17px;
+  }
+}
 .p-contact__form__content select {
   cursor: pointer;
   border: 1px solid #ADADAD;
@@ -9297,8 +9376,7 @@ input, textarea {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
-  padding-top: 12px;
-  padding-left: 15px;
+  padding: 12px 20px;
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
   color: #1F1F1F;
 }

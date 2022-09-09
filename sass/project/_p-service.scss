@@ -454,8 +454,7 @@
                 padding: 20px 15px;
             }
             @include brSpLandscape {
-                padding: 39px 42px 50px;
-                box-shadow: 0 3px 20px rgba($color: $cBase, $alpha: 0.06);
+                padding: 39px 42px 48px;
             }
             &::before {
                 content: '';
@@ -533,6 +532,11 @@
                     line-height: 22px;
                 }
             }
+        }
+        &__box-shadow {
+            box-shadow: 0 3px 20px rgba($color: $cBase, $alpha: 0.26);
+            height: 2px;
+            background: #fff;
         }
         &__service {
             h4 {
@@ -799,6 +803,9 @@
                     border: 1px solid #707070;
                     padding: 16px 20.7px 20px 20.7px;
                     flex-grow: 1;
+                    &__img {
+                        margin-top: auto;
+                    }
                     &:nth-child(2) {
                         @include brSpLandscape {
                             margin-top: 35px;
@@ -979,6 +986,11 @@
                 display: block;
                 img {
                     transition: 0.4s all;
+                    height: 350px;
+                    object-fit: cover;
+                    @include brSpLandscape {
+                        height: 289px;
+                    }
                     &:hover {
                         transform: scale(1.1);
                         transition: .4s all;

@@ -488,6 +488,9 @@
                     display: inline-block;
                     color: $textColor;
                     margin-bottom: 16px;
+                    @include brTablet {
+                        cursor: none;
+                    }
                 }
                 [type="radio"]:checked+label:before,
                 [type="radio"]:not(:checked)+label:before {
@@ -549,11 +552,11 @@
                     width: 200px;
                     height: 50px;
                     padding: 15px 19px;
-                    // &::-webkit-calendar-picker-indicator{
-                    //     opacity: 0;
-                    // }
                     &::-webkit-calendar-picker-indicator {
                         cursor: pointer;
+                    }
+                    @include brSpLandscape {
+                        padding: 15px 17px;
                     }
                 }
                 select {
@@ -587,8 +590,7 @@
                     border-radius: 5px;
                     font-size: 16px;
                     font-weight: 500;
-                    padding-top: 12px;
-                    padding-left: 15px;
+                    padding: 12px 20px;
                     font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
                     color: $textColor;
                     &:focus-visible {
