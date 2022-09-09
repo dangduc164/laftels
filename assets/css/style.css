@@ -9338,6 +9338,14 @@ input, textarea {
 .p-contact__form__content input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
+@media (max-width: 959px) {
+  .p-contact__form__content input[type=date]::-webkit-calendar-picker-indicator {
+    cursor: none;
+  }
+}
+.p-contact__form__content input[type=date]:focus, .p-contact__form__content input[type=date]:focus-visible {
+  outline: none;
+}
 @media (max-width: 599px) {
   .p-contact__form__content input[type=date] {
     padding: 15px 17px;
@@ -9388,7 +9396,7 @@ input, textarea {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
   color: #1F1F1F;
 }
-.p-contact__form__content textarea:focus-visible {
+.p-contact__form__content textarea:focus-visible, .p-contact__form__content textarea:focus {
   outline: none;
 }
 .p-contact__form__content textarea::-webkit-input-placeholder {

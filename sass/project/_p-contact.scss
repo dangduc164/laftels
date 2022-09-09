@@ -554,6 +554,13 @@
                     padding: 15px 19px;
                     &::-webkit-calendar-picker-indicator {
                         cursor: pointer;
+                        @include brTablet {
+                            cursor: none;
+                        }
+                    }
+                    &:focus,
+                    &:focus-visible {
+                        outline: none;
                     }
                     @include brSpLandscape {
                         padding: 15px 17px;
@@ -599,7 +606,8 @@
                     padding: 12px 20px;
                     font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
                     color: $textColor;
-                    &:focus-visible {
+                    &:focus-visible,
+                    &:focus {
                         outline: none;
                     }
                     &::placeholder {
