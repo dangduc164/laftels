@@ -9370,8 +9370,13 @@ input, textarea {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
   text-overflow: ellipsis;
 }
-.p-contact__form__content select:focus-visible {
+.p-contact__form__content select:focus-visible, .p-contact__form__content select:focus {
   outline: none;
+}
+@media (max-width: 959px) {
+  .p-contact__form__content select {
+    cursor: none;
+  }
 }
 .p-contact__form__content select option {
   cursor: pointer;

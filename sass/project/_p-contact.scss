@@ -582,8 +582,12 @@
                     appearance: none;
                     font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
                     text-overflow: ellipsis;
-                    &:focus-visible {
+                    &:focus-visible,
+                    &:focus {
                         outline: none;
+                    }
+                    @include brTablet {
+                        cursor: none;
                     }
                     option {
                         cursor: pointer;
