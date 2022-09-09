@@ -9368,7 +9368,15 @@ input, textarea {
 .p-contact__form__content select option {
   cursor: pointer;
 }
+@media (max-width: 959px) {
+  .p-contact__form__content select option {
+    cursor: none;
+  }
+}
 .p-contact__form__content textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid #ADADAD;
   max-width: 100%;
   width: 670px;
@@ -9417,61 +9425,6 @@ input, textarea {
   font-weight: 500;
   color: #A3A3A3;
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
-}
-.p-contact__form__content input:focus {
-  outline: none;
-}
-.p-contact__form__content .form-control {
-  max-width: 300px;
-  margin: 0 auto;
-}
-.p-contact__form__content .datepicker {
-  font-family: "Exo 2", sans-serif;
-}
-.p-contact__form__content .datepicker--cell.-range-to- {
-  background: rgba(248, 206, 236, 0.4);
-  border-color: rgb(248, 206, 236);
-}
-.p-contact__form__content .datepicker--cell.-selected-,
-.p-contact__form__content .datepicker--cell.-selected-.-focus- {
-  background-color: #f8ceec;
-  color: #000000;
-}
-.p-contact__form__content .datepicker--cell.-in-range- {
-  background: rgba(248, 206, 236, 0.2);
-}
-.p-contact__form__content .datepicker--cell-day {
-  font-weight: 500;
-  color: #000000;
-}
-.p-contact__form__content .form-control {
-  height: 50px;
-  font-size: 16px;
-  color: #414D64;
-  background: #ffffff;
-  padding: 0 15px;
-  border: 2px solid #DADEEA;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-align: center;
-}
-.p-contact__form__content textarea.form-control {
-  height: 120px;
-  padding-top: 15px;
-}
-.p-contact__form__content .form-control-plaintext {
-  font-size: 18px;
-  color: #434343;
-}
-.p-contact__form__content button.form-control {
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.p-contact__form__content .form-control:focus {
-  border-color: #37B448;
-  -webkit-box-shadow: 0px 2px 6px rgba(55, 180, 72, 0.15);
-  box-shadow: 0px 2px 6px rgba(55, 180, 72, 0.15);
 }
 .p-contact__handling-info {
   padding-top: 103px;
@@ -9605,7 +9558,6 @@ input, textarea {
   width: 20px;
   -webkit-appearance: none;
   margin-top: 1px;
-  cursor: pointer;
 }
 @media (max-width: 959px) {
   .p-contact__confirm__group-check input[type=checkbox] {
