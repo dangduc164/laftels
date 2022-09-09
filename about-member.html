@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laftels</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./assets/img/common/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link href="./assets/css/aos.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/jquery.common.js"></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <!-- Header desktop-->
+        <div class="l-header-top">
+            <div class="l-container-fluid">
+                <div class="l-row">
+                    <div class="l-col-auto">
+                        <a class="l-header-top__logo" href="./index.html">
+                            <img src="./assets/img/common/fig_logo.svg" alt="LAFTELS">
+                        </a>
+                    </div>
+                    <div class="l-col l-header-top__col-right">
+                        <div class="l-header-top__menu">
+                            <ul>
+                                <li>
+                                    <a href="./about.html"><span class="ja">私たちについて</span><span
+                                            class="en">ABOUT</span></a>
+                                </li>
+                                <li>
+                                    <a href="./service.html"><span class="ja">サービス</span><span
+                                            class="en">SERVICE</span></a>
+                                </li>
+                                <li>
+                                    <a href="./case.html"><span class="ja">導入事例</span><span class="en">CASE</span></a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html"><span class="ja">セミナー情報</span><span
+                                            class="en">SEMINAR</span></a>
+                                </li>
+                                <li>
+                                    <a href="./column.html"><span class="ja">コラム</span><span
+                                            class="en">COLUMN</span></a>
+                                </li>
+                                <li>
+                                    <a href="./news.html"><span class="ja">お知らせ</span><span class="en">NEWS</span></a>
+                                </li>
+                                <li>
+                                    <a href="./recruit.html"><span class="ja">採用情報</span><span
+                                            class="en">RECRUIT</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-header-top__info">
+                            <div class="l-header-top__contact">
+                                <a class="c-btn-round" href="./contact.html"><span class="ja">お問い合わせ</span><span
+                                        class="en">CONTACT</span></a>
+                            </div>
+                            <div class="l-header-top__social-link">
+                                <a href="https://www.facebook.com/laftels/" target="_blank">
+                                    <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                                </a>
+                                <a href="https://twitter.com/laftels" target="_blank">
+                                    <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header desktop -->
+
+        <!-- Header mobile -->
+        <div class="l-header-mb">
+            <div class="l-container">
+                <div class="l-row">
+                    <div class="l-col-auto">
+                        <a href="./index.html">
+                            <img src="./assets/img/common/fig_logo_mobile.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <div class="js-toggle-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="l-header-mb__menu">
+                            <ul>
+                                <li>
+                                    <a href="./about.html">
+                                        <span>ABOUT</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./service.html">
+                                        <span>SERVICE</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./case.html">
+                                        <span>CASE</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html">
+                                        <span>SEMINAR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./column.html">
+                                        <span>COLUMN</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./news.html">
+                                        <span>NEWS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./recruit.html">
+                                        <span>RECRUIT</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="l-header-mb__info">
+                                <div class="l-header-mb__contact">
+                                    <a class="c-btn-round" href="./contact.html">CONTACT</a>
+                                </div>
+                                <div class="l-header-mb__social-link">
+                                    <a href="https://www.facebook.com/laftels/" target="_blank">
+                                        <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                                    </a>
+                                    <a href="https://twitter.com/laftels" target="_blank">
+                                        <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header mobile -->
+    </header>
+
+    <section>
+        <div class="p-about-details">
+            <div class="c-top-mv">
+                <!--- top mv pc-->
+                <img class="c-top-mv__pc" src="./assets/img/about-details/img_top-mv.jpg" alt="">
+                <!---end top mv pc-->
+
+                <!---top mv sp -->
+                <img class="c-top-mv__sp" srcset="./assets/img/about-details/img_top-mv_sp.jpg" alt="">
+                <!---end top mv sp -->
+                <div class="c-top-mv__title" data-aos="fade-up">
+                    <h3>キャッチコピーが入ります、<br /> キャッチコピーテキストテキストテキストテキスト。</h3>
+                </div>
+                <div class="p-about-details__position" data-aos="fade-up">
+                    <p>役職・肩書き</p>
+                    <h3>
+                        <strong>苗字 名前</strong>
+                        <span>myoji namae</span>
+                    </h3>
+                </div>
+            </div>
+
+
+            <div class="p-about-details__respon">
+                <img src="./assets/img/about-details/img_member_sp.jpg" alt="">
+                <div class="p-about-details__respon__decs">
+                    <p>役職・肩書き</p>
+                    <h3>
+                        <strong>苗字 名前</strong>
+                        <span>michishita takashi</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="p-about-details__content">
+                <div class="l-container">
+                    <div class="l-row">
+                        <div class="l-col p-about-details__content__left" data-aos="fade-right">
+                            <img src="./assets/img/about-details/img_content.png" alt="">
+                        </div>
+                        <div class="l-col p-about-details__content__right" data-aos="fade-left">
+                            <h3>仕事のやりがい、趣味などについての <br /> 見出しが入ります。
+                            </h3>
+                            <p>
+                                300文字程度の文章が入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-about-details__content-two" data-aos="fade-left">
+                <div class="l-container">
+                    <img src="./assets/img/about-details/img_content_02.png" alt="">
+                    <div class="p-about-details__content-two__block" data-aos="fade-right">
+                        <h3> 仕事のやりがい、趣味などについての <br /> 見出しが入ります。</h3>
+                        <p>
+                            300文字程度の文章が入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-about-details__member">
+                <div class="l-container">
+                    <div class="c-title-center" data-aos="fade-up">
+                        <h3>MEMBER</h3>
+                        <p>メンバー紹介</p>
+                    </div>
+                    <div class="p-about-details__member__slider" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <div class="p-about-details__member__box">
+                                    <a href="#" class="p-about-details__member__img">
+                                        <img src="./assets/img/about-details/img_member_01.png" alt="">
+                                    </a>
+                                    <div class="p-about-details__member__content">
+                                        <p>役職・肩書き</p>
+                                        <h4>
+                                            <strong>苗字 名前</strong>
+                                            <span>myoji namae</span>
+                                        </h4>
+                                    </div>
+                                    <a href="#" class="p-about-details__member__link"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-about-details__member__box">
+                                    <a href="#" class="p-about-details__member__img">
+                                        <img src="./assets/img/about-details/img_member_02.png" alt="">
+                                    </a>
+                                    <div class="p-about-details__member__content">
+                                        <p>役職・肩書き</p>
+                                        <h4>
+                                            <strong>苗字 名前</strong>
+                                            <span>myoji namae</span>
+                                        </h4>
+                                    </div>
+                                    <a href="#" class="p-about-details__member__link"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-about-details__member__box">
+                                    <a href="#" class="p-about-details__member__img">
+                                        <img src="./assets/img/about-details/img_member_03.png" alt="">
+                                    </a>
+                                    <div class="p-about-details__member__content">
+                                        <p>役職・肩書き</p>
+                                        <h4>
+                                            <strong>苗字 名前</strong>
+                                            <span>myoji namae</span>
+                                        </h4>
+                                    </div>
+                                    <a href="#" class="p-about-details__member__link"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-about-details__member__box">
+                                    <a href="#" class="p-about-details__member__img">
+                                        <img src="./assets/img/about-details/img_member_04.png" alt="">
+                                    </a>
+                                    <div class="p-about-details__member__content">
+                                        <p>役職・肩書き</p>
+                                        <h4>
+                                            <strong>苗字 名前</strong>
+                                            <span>myoji namae</span>
+                                        </h4>
+                                    </div>
+                                    <a href="#" class="p-about-details__member__link"> </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-about-details__member__box">
+                                    <a href="#" class="p-about-details__member__img">
+                                        <img src="./assets/img/about-details/img_member_04.png" alt="">
+                                    </a>
+                                    <div class="p-about-details__member__content">
+                                        <p>役職・肩書き</p>
+                                        <h4>
+                                            <strong>苗字 名前</strong>
+                                            <span>myoji namae</span>
+                                        </h4>
+                                    </div>
+                                    <a href="#" class="p-about-details__member__link"> </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="c-btn-effect" data-aos="fade-up">
+                <span>一覧に戻る</span>
+
+            </a>
+            <div class="c-breadcrumb">
+                <div class="l-container">
+                    <ul>
+                        <li>
+                            <a href="#">TOP</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">MEMBER</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">苗字　名前</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        <div class="l-footer__recruit pc">
+            <img src="./assets/img/common/img_recruit.jpg" alt="">
+            <div class="l-footer__recruit__content">
+                <div class="c-title-center">
+                    <h3 data-aos="fade-up">RECRUIT</h3>
+                    <p data-aos="fade-up">採用情報</p>
+                </div>
+                <p class="l-footer__recruit__desc" data-aos="fade-up">
+                    新しいクルーを募集します。<br>共に戦い、社内外に大きなインパクトを起こしてくれる<br>新たな仲間との出会いを楽しみにしています。
+                </p>
+                <a href="#" class="c-btn-effect" data-aos="fade-up">
+                    <span>新卒採用/中途採用</span>
+                </a>
+            </div>
+        </div>
+        <div class="l-footer__recruit sp">
+            <img src="./assets/img/common/img_recruit_sp.jpg" alt="">
+            <div class="l-footer__recruit__content">
+                <div class="c-title-center">
+                    <h3 data-aos="fade-up">RECRUIT</h3>
+                    <p data-aos="fade-up">採用情報</p>
+                </div>
+                <p class="l-footer__recruit__desc" data-aos="fade-up">
+                    新しいクルーを募集します。<br>共に戦い、社内外に大きなインパクトを<br>起こしてくれる<br>新たな仲間との出会いを楽しみにしています。
+                </p>
+                <a href="#" class="c-btn-effect" data-aos="fade-up">
+                    <span>新卒採用/中途採用</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="l-footer__doc-request pc">
+            <img src="./assets/img/common/img_doc-request.jpg" alt="">
+            <div class="l-footer__doc-request__content">
+                <div class="c-title-center">
+                    <h3 data-aos="fade-up">資料請求</h3>
+                </div>
+                <p class="l-footer__doc-request__desc" data-aos="fade-up">
+                    ラフテルズのサービスについての資料をダウンロードいただけます。<br>お気軽にお申し込みください。
+                </p>
+                <a href="#" class="c-btn-effect" data-aos="fade-up">
+                    <span>資料請求をする</span>
+                </a>
+            </div>
+        </div>
+        <div class="l-footer__doc-request sp">
+            <img src="./assets/img/common/img_doc-request_sp.jpg" alt="">
+            <div class="l-footer__doc-request__content">
+                <div class="c-title-center">
+                    <h3 data-aos="fade-up">資料請求</h3>
+                </div>
+                <p class="l-footer__doc-request__desc" data-aos="fade-up">
+                    ラフテルズのサービスについての資料を<br>ダウンロードいただけます。<br>お気軽にお申し込みください。
+                </p>
+                <a href="#" class="c-btn-effect" data-aos="fade-up">
+                    <span>資料請求をする</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="l-footer__main">
+            <div class="l-container">
+                <div class="l-row">
+                    <div class="l-footer__main__col">
+                        <a href="#" class="l-footer__main__logo">
+                            <img src="./assets/img/common/fig_logo.svg" alt="laftels">
+                        </a>
+                        <div class="l-footer__main__link-sp">
+                            <ul>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">ABOUT</a>
+                                    <a href="#" class="l-footer__main__category-child">ラフテルズについて</a>
+                                    <a href="#" class="l-footer__main__category-child">スタッフ紹介</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">SERVICE</a>
+                                    <a href="#" class="l-footer__main__category-child">事業内容</a>
+                                    <a href="#" class="l-footer__main__category-child">デザイン制作</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">CASE</a>
+                                    <a href="#" class="l-footer__main__category-child">実施例</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">SEMINAR</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナー情報</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">COLUMN</a>
+                                    <a href="#" class="l-footer__main__category-child">組織戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">採用戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">人事戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナーレポート</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">NEWS</a>
+                                    <a href="#" class="l-footer__main__category-child">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">メディア掲載</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">RECRUIT</a>
+                                    <a href="#" class="l-footer__main__category-child">新卒採用・中途採用</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-footer__main__privacy-sp">
+                            <a href="#">ブライバシーポリシー</a>
+                        </div>
+                        <a class="c-btn-round" href="./contact.html">CONTACT</a>
+                        <div class="l-footer__main__social-link">
+                            <a href="https://www.facebook.com/laftels/" target="_blank">
+                                <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                            </a>
+                            <a href="https://twitter.com/laftels" target="_blank">
+                                <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                            </a>
+                        </div>
+                        <div class="l-footer__main__privacy">
+                            <a href="#">ブライバシーポリシー</a>
+                        </div>
+                        <div class="l-footer__main__copy-right">Copyright © LAFTELS inc. Allrights Reserved.</div>
+                    </div>
+                    <div class="l-footer__main__col">
+                        <div class="l-footer__main__link">
+                            <ul>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">私たちについて</a>
+                                    <a href="#" class="l-footer__main__category-child">ラフテルズについて</a>
+                                    <a href="#" class="l-footer__main__category-child">スタッフ紹介</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">サービス</a>
+                                    <a href="#" class="l-footer__main__category-child">事業内容</a>
+                                    <a href="#" class="l-footer__main__category-child">デザイン制作</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">導入事例</a>
+                                    <a href="#" class="l-footer__main__category-child">実施例</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">セミナー情報</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナー情報</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">コラム</a>
+                                    <a href="#" class="l-footer__main__category-child">組織戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">採用戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">人事戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナーレポート</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">メディア掲載</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">採用情報</a>
+                                    <a href="#" class="l-footer__main__category-child">新卒採用・中途採用</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>

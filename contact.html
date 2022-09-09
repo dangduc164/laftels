@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laftels</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./assets/img/common/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link href="./assets/css/aos.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/jquery.common.js"></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <!-- Header desktop-->
+        <div class="l-header-top">
+            <div class="l-container-fluid">
+                <div class="l-row">
+                    <div class="l-col-auto">
+                        <a class="l-header-top__logo" href="./index.html">
+                            <img src="./assets/img/common/fig_logo.svg" alt="LAFTELS">
+                        </a>
+                    </div>
+                    <div class="l-col l-header-top__col-right">
+                        <div class="l-header-top__menu">
+                            <ul>
+                                <li>
+                                    <a href="./about.html"><span class="ja">私たちについて</span><span
+                                            class="en">ABOUT</span></a>
+                                </li>
+                                <li>
+                                    <a href="./service.html"><span class="ja">サービス</span><span
+                                            class="en">SERVICE</span></a>
+                                </li>
+                                <li>
+                                    <a href="./case.html"><span class="ja">導入事例</span><span class="en">CASE</span></a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html"><span class="ja">セミナー情報</span><span
+                                            class="en">SEMINAR</span></a>
+                                </li>
+                                <li>
+                                    <a href="./column.html"><span class="ja">コラム</span><span
+                                            class="en">COLUMN</span></a>
+                                </li>
+                                <li>
+                                    <a href="./news.html"><span class="ja">お知らせ</span><span class="en">NEWS</span></a>
+                                </li>
+                                <li>
+                                    <a href="./recruit.html"><span class="ja">採用情報</span><span
+                                            class="en">RECRUIT</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-header-top__info">
+                            <div class="l-header-top__contact">
+                                <a class="c-btn-round" href="./contact.html"><span class="ja">お問い合わせ</span><span
+                                        class="en">CONTACT</span></a>
+                            </div>
+                            <div class="l-header-top__social-link">
+                                <a href="https://www.facebook.com/laftels/" target="_blank">
+                                    <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                                </a>
+                                <a href="https://twitter.com/laftels" target="_blank">
+                                    <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header desktop -->
+
+        <!-- Header mobile -->
+        <div class="l-header-mb">
+            <div class="l-container">
+                <div class="l-row">
+                    <div class="l-col-auto">
+                        <a href="./index.html">
+                            <img src="./assets/img/common/fig_logo_mobile.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-col">
+                        <div class="js-toggle-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="l-header-mb__menu">
+                            <ul>
+                                <li>
+                                    <a href="./about.html">
+                                        <span>ABOUT</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./service.html">
+                                        <span>SERVICE</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./case.html">
+                                        <span>CASE</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./seminar.html">
+                                        <span>SEMINAR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./column.html">
+                                        <span>COLUMN</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./news.html">
+                                        <span>NEWS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./recruit.html">
+                                        <span>RECRUIT</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="l-header-mb__info">
+                                <div class="l-header-mb__contact">
+                                    <a class="c-btn-round" href="./contact.html">CONTACT</a>
+                                </div>
+                                <div class="l-header-mb__social-link">
+                                    <a href="https://www.facebook.com/laftels/" target="_blank">
+                                        <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                                    </a>
+                                    <a href="https://twitter.com/laftels" target="_blank">
+                                        <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header mobile -->
+    </header>
+
+    <section>
+        <div class="p-contact">
+            <div class="c-top-mv">
+                <!--- top mv pc-->
+                <img class="c-top-mv__pc" src="./assets/img/contact/img_top-mv.jpg" alt="">
+                <!---end top mv pc-->
+                <div class="c-top-mv__title">
+                    <h3>CONTACT</h3>
+                    <p>お問い合わせ</p>
+                </div>
+                <div class="c-top-mv__job">
+                    <h4>新卒採用</h4>
+                    <p>
+                        <strong>ENTRY</strong> は <br />
+                        <span>こちらから</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="l-container">
+                <div class="c-wrap">
+                    <div class="p-contact__inner">
+                        <div class="c-breadcrumb">
+                            <ul>
+                                <li>
+                                    <a href="#">TOP</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">お問い合わせ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-contact__alert">
+                        <p>※「 info@laftels.com 」からのメールアドレスを受信可能に設定していただきますようお願いいたします。 </p>
+                        <p>※営業目的のメールはお断りしております。</p>
+                    </div>
+                    <div class="p-contact__timeline">
+                        <h5>平日9時〜18時はお電話でのお問い合わせも承っております。</h5>
+                        <h1>03-6812-9172</h1>
+                        <p>※電話番号は、おかけ間違いのないようご注意ください。</p>
+                    </div>
+                    <div class="p-contact__nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#">
+                                    <span>01</span> 項目の入力
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>02</span> 入力内容の確認
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>03</span> 送信完了
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="p-contact__form" data-aos="fade-up">
+                        <ul>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        お問い合わせ内容
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="radio" id="問い合わせ" name="inquiry" checked value="問い合わせ">
+                                    <label for="問い合わせ">問い合わせ</label><br>
+                                    <input type="radio" id="資料請求" name="inquiry" value="資料請求">
+                                    <label for="資料請求">資料請求</label><br>
+                                    <input type="radio" id="採用に応募する" name="inquiry" value="採用に応募する">
+                                    <label for="採用に応募する">採用に応募する</label>
+                                    <p class="error">※選択してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        会社名
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="○○○○○○○○○株式会社" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        お名前
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="山田　花子" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        メールアドレス
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="info@laftels.com" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        電話番号
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="09000000000" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p class="error">お問い合わせの詳細</p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <textarea placeholder="お問い合わせの詳細をご記入ください。" name="" id="" cols="95" rows="8"></textarea>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        応募種別
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="radio" id="新卒採用" name="type" value="新卒採用" checked>
+                                    <label for="新卒採用">新卒採用</label><br>
+                                    <input type="radio" id="中途採用" name="type" value="中途採用">
+                                    <label for="中途採用">中途採用</label>
+                                    <p class="error">※選択してください</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        応募職種
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="radio" id="コンサルタント" name="Application" value="コンサルタント" checked>
+                                    <label for="コンサルタント">コンサルタント</label><br>
+                                    <input type="radio" id="カスタマーサポート" name="Application" value="カスタマーサポート">
+                                    <label for="カスタマーサポート">カスタマーサポート</label><br>
+                                    <input type="radio" id="営業" name="Application" value="営業">
+                                    <label for="営業">営業</label>
+                                    <p class="error">※選択してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        氏名
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="山田　花子" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        ふりがな
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="やまだ　はなこ" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        大学名
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="○○○○○○大学" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        卒業年
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <select name="" id="">
+                                        <option value="選択してください">選択してください</option>
+                                        <option value="demo">demo</option>
+                                    </select>
+                                    <p class="error">※選択してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        生年月日
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input id="datepicker" type="date" placeholder="2021/01/01" />
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        電話番号
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="09000000000" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="p-contact__form__title">
+                                    <p>
+                                        メールアドレス
+                                        <span>必須</span>
+                                    </p>
+                                </div>
+                                <div class="p-contact__form__content">
+                                    <input type="text" placeholder="info@laftels.com" value="">
+                                    <p class="error">※正しく入力してください</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-contact__handling-info" data-aos="fade-up">
+                        <h4>【個人情報取り扱い】について</h4>
+                        <div class="p-contact__handling-info__content">
+                            <div class="p-contact__handling-info__inner">
+                                <p>
+                                    株式会社株式会社ラフテルズ（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
+                                </p>
+                                <p>
+                                    <b>個人情報の管理 </b> <br /> 当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。
+                                </p>
+                                <p>
+                                    <b>個人情報の利用目的 </b> <br /> お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。
+    
+                                </p>
+                                <p>
+                                    <b>個人情報の第三者への開示・提供の禁止 </b> <br /> 当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。
+                                </p>
+                                <p>
+                                    <b>お客さまの同意がある場合</b> <br /> お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合 <br /> 法令に基づき開示することが必要である場合
+                                </p>
+                                <p>
+                                    <b>個人情報の安全対策 </b> <br /> 当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。
+                                </p>
+                                <p>
+                                    <b>ご本人の照会 </b> <br /> お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。
+                                </p>
+                                <p>
+                                    <b>法令、規範の遵守と見直し </b> <br /> 当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。
+                                </p>
+                                <p>
+                                    <b>お問い合せ </b> <br /> 当社の個人情報の取扱に関するお問い合せは下記までご連絡ください。 <br /> 株式会社ラフテルズ（英語表記：LAFTELS）
+                                    <br /> 〒151-0051　東京都渋谷区千駄ヶ谷 1-22-6 松山ビル3F <br /> TEL：03-6812-9172　FAX：03-6812-9173
+                                    <br /> Mail：info@up-seek.comlaftels.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-contact__confirm" data-aos="fade-up">
+                        <p>
+                            <strong>必須</strong><span>個人情報取り扱いついて、同意する場合は以下にチェックをお願いいたします。</span>
+                        </p>
+                        <div class="p-contact__confirm__group-check">
+                            <input type="checkbox" name="同意する" id="同意する">
+                            <label for="同意する">同意する</label>
+                            <p class="error">※選択してください</p>
+                        </div>
+                    </div>
+                    <a href="#" class="c-btn-effect" data-aos="fade-up">
+                        <span>確認する</span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="l-footer">
+        <div class="l-footer__main">
+            <div class="l-container">
+                <div class="l-row">
+                    <div class="l-footer__main__col">
+                        <a href="#" class="l-footer__main__logo">
+                            <img src="./assets/img/common/fig_logo.svg" alt="laftels">
+                        </a>
+                        <div class="l-footer__main__link-sp">
+                            <ul>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">ABOUT</a>
+                                    <a href="#" class="l-footer__main__category-child">ラフテルズについて</a>
+                                    <a href="#" class="l-footer__main__category-child">スタッフ紹介</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">SERVICE</a>
+                                    <a href="#" class="l-footer__main__category-child">事業内容</a>
+                                    <a href="#" class="l-footer__main__category-child">デザイン制作</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">CASE</a>
+                                    <a href="#" class="l-footer__main__category-child">実施例</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">SEMINAR</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナー情報</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">COLUMN</a>
+                                    <a href="#" class="l-footer__main__category-child">組織戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">採用戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">人事戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナーレポート</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">NEWS</a>
+                                    <a href="#" class="l-footer__main__category-child">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">メディア掲載</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">RECRUIT</a>
+                                    <a href="#" class="l-footer__main__category-child">新卒採用・中途採用</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="l-footer__main__privacy-sp">
+                            <a href="#">ブライバシーポリシー</a>
+                        </div>
+                        <a class="c-btn-round" href="./contact.html">CONTACT</a>
+                        <div class="l-footer__main__social-link">
+                            <a href="https://www.facebook.com/laftels/" target="_blank">
+                                <img src="./assets/img/common/icn_facebook.svg" alt="facebook">
+                            </a>
+                            <a href="https://twitter.com/laftels" target="_blank">
+                                <img src="./assets/img/common/icn_twitter.svg" alt="twitter">
+                            </a>
+                        </div>
+                        <div class="l-footer__main__privacy">
+                            <a href="#">ブライバシーポリシー</a>
+                        </div>
+                        <div class="l-footer__main__copy-right">Copyright © LAFTELS inc. Allrights Reserved.</div>
+                    </div>
+                    <div class="l-footer__main__col">
+                        <div class="l-footer__main__link">
+                            <ul>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">私たちについて</a>
+                                    <a href="#" class="l-footer__main__category-child">ラフテルズについて</a>
+                                    <a href="#" class="l-footer__main__category-child">スタッフ紹介</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">サービス</a>
+                                    <a href="#" class="l-footer__main__category-child">事業内容</a>
+                                    <a href="#" class="l-footer__main__category-child">デザイン制作</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">導入事例</a>
+                                    <a href="#" class="l-footer__main__category-child">実施例</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">セミナー情報</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナー情報</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">コラム</a>
+                                    <a href="#" class="l-footer__main__category-child">組織戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">採用戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">人事戦略</a>
+                                    <a href="#" class="l-footer__main__category-child">セミナーレポート</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">お知らせ</a>
+                                    <a href="#" class="l-footer__main__category-child">メディア掲載</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="l-footer__main__category">採用情報</a>
+                                    <a href="#" class="l-footer__main__category-child">新卒採用・中途採用</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>

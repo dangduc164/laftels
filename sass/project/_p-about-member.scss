@@ -1,0 +1,581 @@
+@charset "utf-8";
+.p-about-details {
+    .c-top-mv {
+        position: relative;
+    }
+    .c-top-mv__title {
+        position: absolute;
+        top: 153px;
+        left: calc((100% - 907px) / 2);
+        @media (max-width: 1366px) {
+            top: 80px;
+        }
+        @include brTablet {
+            top: 73px;
+            left: 15px;
+        }
+        @include brSpLandscape {
+            top: 43px;
+            display: none;
+        }
+        h3 {
+            font-size: 30px;
+            line-height: 48px;
+            font-weight: bold;
+            width: 459px;
+            max-width: 100%;
+            font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+            @include brTablet {
+                width: 300px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            @include brSpLandscape {
+                font-size: 15px;
+                width: 250px;
+            }
+        }
+    }
+    &__position {
+        position: absolute;
+        bottom: 196px;
+        left: calc((100% - 907px) / 2);
+        @media (max-width: 1366px) {
+            bottom: 96px;
+        }
+        @include brTablet {
+            left: 15px;
+        }
+        @include brSpLandscape {
+            bottom: 63px;
+            display: none;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 500;
+            font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+            @include brTablet {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            @include brSpLandscape {
+                font-size: 13px;
+            }
+        }
+        h3 {
+            strong {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 39px;
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                @include brTablet {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                @include brSpLandscape {
+                    font-size: 15px;
+                }
+            }
+            span {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                margin-left: 16px;
+                @include brTablet {
+                    font-size: 14px;
+                }
+                @include brSpLandscape {
+                    margin-left: 6px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    &__content {
+        .l-container {
+            @include brSpLandscape {
+                padding: 0 25px;
+            }
+        }
+        .l-col {
+            @include brTablet {
+                max-width: 50%;
+            }
+            @include brSpLandscape {
+                max-width: 100%;
+            }
+        }
+        &__left {
+            max-width: 590px;
+            img {
+                max-width: 500px;
+                margin-top: -52px;
+                position: relative;
+                z-index: 1;
+                @include brSpLandscape {
+                    margin-top: 25px;
+                    max-width: 270px;
+                }
+            }
+        }
+        &__right {
+            h3 {
+                font-size: 30px;
+                width: 530px;
+                max-width: 100%;
+                line-height: 48px;
+                font-weight: bold;
+                margin-top: 173px;
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                @include brTablet {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-top: 115px;
+                }
+                @include brSpLandscape {
+                    margin-top: 17px;
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+            }
+            p {
+                margin-top: 47px;
+                width: 515px;
+                max-width: 100%;
+                font-size: 16px;
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                line-height: 30px;
+                font-weight: 500;
+                @include brTablet {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 54px;
+                }
+                @include brSpLandscape {
+                    margin-top: 8px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &__content-two {
+        padding: 94px 0 50px;
+        position: relative;
+        .l-container {
+            position: relative;
+            @include brSpLandscape {
+                padding: 0 25px;
+            }
+        }
+        @include brTablet {
+            padding: 74px 0 50px;
+            margin-bottom: 70px;
+        }
+        @include brSpLandscape {
+            padding: 60px 0 50px;
+            margin-bottom: 0;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 415px;
+            max-width: 1000px;
+            z-index: -1;
+            @include brTablet {
+                left: 215px;
+            }
+            @include brSpLandscape {
+                position: static;
+                width: calc(100% + 50px);
+                object-fit: cover;
+                margin-left: -25px;
+                min-height: 200px;
+            }
+        }
+        &__block {
+            padding-left: 100px;
+            padding-top: 227px;
+            @include brTablet {
+                padding-left: 15px;
+                padding-top: 30px;
+            }
+            @include brSpLandscape {
+                padding-left: 0;
+                padding-top: 17px;
+            }
+            h3 {
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                font-size: 30px;
+                width: 515px;
+                max-width: 100%;
+                line-height: 48px;
+                font-weight: bold;
+                @include brTablet {
+                    font-size: 18px;
+                    line-height: 27px;
+                    max-width: 354px;
+                }
+                @include brSpLandscape {
+                    font-size: 16px;
+                }
+                @include brSpPortrait {}
+            }
+            p {
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                text-align: left;
+                margin-top: 47px;
+                width: 515px;
+                max-width: 100%;
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 500;
+                @include brTablet {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-top: 54px;
+                    max-width: 354px;
+                }
+                @include brSpLandscape {
+                    margin-top: 8px;
+                    max-width: 100%;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &__member {
+        padding: 88px 0 79px;
+        position: relative;
+        @include brTablet {
+            padding: 60px 0 90px;
+        }
+        @include brSpLandscape {
+            padding-bottom: 30px;
+        }
+        .l-container {
+            @include brSpLandscape {
+                padding: 0 25px;
+            }
+        }
+        .c-title-center {
+            h3 {
+                margin-bottom: -4px;
+            }
+            p {
+                font-family: "Yu Gothic";
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                @include brSpLandscape {
+                    font-size: 11px;
+                    line-height: 15px;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10000%;
+            height: 1px;
+            background: #F0F0F0;
+            top: 49px;
+            @include brTablet {
+                top: 29px;
+            }
+        }
+        ul {
+            li {
+                position: relative;
+            }
+        }
+        &__slider {
+            margin-top: 44px;
+            @include brSpLandscape {
+                margin-top: 15px;
+            }
+        }
+        &__box {
+            position: relative;
+        }
+        &__link {
+            position: relative;
+            position: absolute;
+            right: 15px;
+            bottom: 13px;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $textColor;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+                content: url("../img/common/icn_about-menber_link.svg");
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include brSpLandscape {
+                    content: url("../img/common/icn_about-menber_link-sp.svg");
+                    top: 30%;
+                }
+            }
+            @include brTablet {
+                right: 13px;
+            }
+            @include brSpLandscape {
+                width: 15px;
+                height: 15px;
+                svg {
+                    width: 5px;
+                }
+            }
+            &:hover {
+                background-color: $textColor;
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+        &__img {
+            overflow: hidden;
+            @include brSpLandscape {
+                display: block;
+            }
+            img {
+                transition: .4s all;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &__content {
+            background: #F4F4F4;
+            position: relative;
+            height: 90px;
+            margin-top: -38px;
+            width: 100%;
+            max-width: 280px;
+            @include brSpLandscape {
+                max-width: none;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                left: 0px;
+                border-right: 19px solid transparent;
+                border-top: 19px solid $textColor;
+                top: 0;
+            }
+            p {
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                font-size: 14px;
+                padding: 17px 20px 15px 20px;
+                line-height: 20px;
+                font-weight: 500;
+                @include brSpLandscape {
+                    font-size: 11px;
+                    line-height: 10px;
+                }
+            }
+            h4 {
+                margin-left: 20px;
+                strong {
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                    line-height: 26px;
+                    @include brSpLandscape {
+                        font-size: 13px;
+                        line-height: 17px;
+                    }
+                }
+                span {
+                    margin-left: 6px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    @include brSpLandscape {
+                        display: block;
+                        margin-left: 0;
+                        font-size: 11px;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+        .slick-list {
+            margin-left: -13.5px;
+            margin-right: -13.5px;
+            @include brTablet {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            @include brSpLandscape {
+                overflow: visible;
+                margin-right: 130px;
+            }
+        }
+        .slick-slide {
+            padding: 0 13.5px;
+            @include brTablet {
+                padding: 0 10px;
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $textColor;
+            border: 1px solid $textColor;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            @include brTablet {
+                width: 35px;
+                height: 35px;
+                svg {
+                    width: 7px;
+                }
+            }
+            svg {
+                path {
+                    stroke: #fff;
+                }
+            }
+            &.slick-prev {
+                left: -75px;
+                @include brTablet {
+                    right: -13px;
+                }
+                @include brSpLandscape {
+                    display: none !important;
+                }
+            }
+            &.slick-next {
+                right: -75px;
+                @include brTablet {
+                    right: -13px;
+                }
+            }
+        }
+    }
+    .c-btn-effect {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        font-family: "Yu Gothic";
+        line-height: 32px;
+        font-weight: 700;
+        margin-bottom: 83px;
+        @include brSpLandscape {
+            margin-bottom: 40px;
+            font-family: "Open Sans", sans-serif;
+        }
+    }
+    .c-breadcrumb {
+        position: relative;
+        margin-bottom: 0;
+        padding: 26px 0 9px;
+        a {
+            color: #ADADAD;
+            @include brSpLandscape {
+                font-size: 12px;
+            }
+        }
+        a.active {
+            color: $textColor;
+            font-weight: 500;
+            font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+        }
+        svg {
+            opacity: .3;
+        }
+        &::before {
+            content: '';
+            width: 10000%;
+            position: absolute;
+            background: #F0F0F0;
+            top: 0;
+            height: 1px;
+        }
+        li {
+            margin-right: 36px;
+            @include brSpLandscape {
+                margin-right: 22px;
+            }
+            +li {
+                &::before {
+                    left: -22px;
+                    @include brSpLandscape {
+                        left: -12px;
+                    }
+                }
+            }
+            &::before {
+                opacity: .3;
+            }
+        }
+    }
+    &__respon {
+        display: none;
+        position: relative;
+        &::after {
+            content: "";
+            background: linear-gradient(0deg, #353535, rgba(53, 53, 53, 0));
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 134px;
+            left: 0;
+        }
+        @include brSpLandscape {
+            display: block;
+        }
+        img {
+            margin-top: -249px;
+            position: relative;
+            z-index: -1;
+        }
+        &__decs {
+            position: absolute;
+            bottom: 16px;
+            left: 25px;
+            z-index: 10;
+            p {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 30px;
+                color: #FFF;
+                margin-bottom: -9px;
+                font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+            }
+            h3 {
+                strong {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, sans-serif;
+                }
+                span {
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-left: 9px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}
