@@ -319,7 +319,7 @@
                 transform: translate(-50%, -50%);
                 @include brSpLandscape {
                     content: url("../img/common/icn_about-menber_link-sp.svg");
-                    top: 30%;
+                    top: calc(50% - 3px);
                 }
             }
             @include brTablet {

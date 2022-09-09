@@ -229,15 +229,21 @@
         overflow-x: hidden;
         @include brSpLandscape {
             background: rgba($color: #F5F5F5, $alpha: 0.3);
-            margin-top: -106px;
+            margin-top: -115px;
             z-index: 10;
             position: relative;
+        }
+        .l-container {
+            @include brTablet {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
         &__title {
             text-align: center;
             padding-top: 87px;
             @include brTablet {
-                padding-top: 40px;
+                padding-top: 49px;
             }
             h2 {
                 font-weight: 600;
@@ -301,10 +307,10 @@
             padding: 33px 39px 50px 127px;
             position: relative;
             @include brTablet {
-                padding: 20px 0;
+                padding: 20px 15px;
             }
             @include brSpLandscape {
-                padding: 39px 27px;
+                padding: 46px 42px;
             }
             .l-row {
                 @include brSpLandscape {
@@ -393,9 +399,10 @@
                 @include brTablet {
                     font-size: 14px;
                     line-height: 22px;
+                    padding-left: 0;
                 }
                 @include brSpLandscape {
-                    padding-top: 17px;
+                    padding-top: 46px;
                 }
             }
             &__right {
@@ -444,10 +451,11 @@
             padding: 48px 39px 50px 127px;
             position: relative;
             @include brTablet {
-                padding: 20px 0;
+                padding: 20px 15px;
             }
             @include brSpLandscape {
-                padding: 39px 27px 50px;
+                padding: 39px 42px 50px;
+                box-shadow: 0 3px 20px rgba($color: $cBase, $alpha: 0.06);
             }
             &::before {
                 content: '';
@@ -500,7 +508,7 @@
             &__title {
                 font-size: 19px;
                 line-height: 30px;
-                font-weight: 600;
+                font-weight: 600 !important;
                 padding: 31px 0 13px;
                 @include brTablet {
                     font-size: 15px;
@@ -840,8 +848,10 @@
                             }
                         }
                     }
-                    img {
+                    &__img {
                         margin-top: auto;
+                    }
+                    img {
                         @include brSpLandscape {
                             margin-top: 9px;
                             min-height: 153px;

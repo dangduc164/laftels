@@ -751,6 +751,11 @@
                 }
                 img{
                     transition: .4s all;
+                    height: 320px;
+                    object-fit: cover;
+                    @include brSpLandscape{
+                        height: 327px;
+                    }
                 }
             }
         }
